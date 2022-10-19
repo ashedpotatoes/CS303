@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream> 
+#include <exception>
 #include "functions.h" 
 using namespace std;
 
@@ -20,14 +21,32 @@ int main() {
     // closes file in good practice
     infile.close();
     // tests! 
-    modify(intarr, size);
-    modify(intarr, size);
-    cout << "Erasing the index test: " << endl;
-    eraseIndex(intarr, size);
-    cout << "Adding the end to the array: " << endl;
-    addEnd(intarr, size);
-    cout << "testing for a value that isn't in the array: " << endl;
-    cout << search(intarr, size, 300) << endl;
-    cout << "testing for a value in the array: " << endl;
-    cout << search(intarr, size, 5) << endl;
+    // all of these are different try and catch blocks so that way the program can proceed & doesn't halt everything. 
+    // e.what() prints out the statements that are supplied in functions.cpp, notifies user exactly where the error is and why it occured.
+    try {
+        cout << "Search test result." << endl;
+        cout << search(intarr, size) << endl;
+    }
+    catch (exception &e) {
+        cout << e.what() << endl;
+    }
+    try {
+        modify(intarr, size);
+    }
+    catch (exception& e) {
+        cout << e.what() << endl;
+    }
+    try {
+        eraseIndex(intarr, size);
+    }
+    catch (exception& e) {
+        cout << e.what() << endl;
+    }
+    try {
+        addEnd(intarr, size);
+    }
+    catch (exception& e) {
+        cout << e.what() << endl;
+    }
+    
 }
