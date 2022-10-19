@@ -1,10 +1,16 @@
 #pragma once 
 #include <iostream> 
 #include <fstream> 
+#include <string>
+using namespace std;
 
-// pre: takes in the array, size, and target number
+//pre: takes in a string 
+//post: returns if whether or not a provided string is a digit
+bool isDigits(string s);
+
+// pre: takes in the array & size
 // post: returns index of the value if found, returns -1 otherwise   
-int search(int arr[], int size, int target);
+int search(int arr[], int size);
 
 // pre: takes in the array and size
 // post: changes the value of the array at an index
