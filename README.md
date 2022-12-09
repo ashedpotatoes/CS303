@@ -25,3 +25,5 @@ The other is with a palindrome but an incorrect state. In both instances, the mo
 
 ![assignment 3 proof#1](https://user-images.githubusercontent.com/91101801/206593294-0a43911d-0f5d-43b1-b802-a1a517ee89aa.png)
 
+Both repl and VSCode were used, which is why there are descrepancies in the styles. 
+
