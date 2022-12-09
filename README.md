@@ -12,8 +12,8 @@ If the user has correctly entered a state, then the program will return what the
 If the user entered a state that isn't on the list, then the program will give an error message.
 
 The final part of the assignment doesn't have anything for the user to modify, it just fills in a queue 
-with values and then modifies it. However, this can be altered by switching the values around in the 
-loop to be a higher integer value or by pushing a value on after the fact. 
+with values and then modifies the order. However, the values can be altered by switching the values around in the 
+loop to be a different (positive) integer value or by pushing a value on after the loop has executed. 
 
 I have included two screenshots below, one is with a string that isn't a palindrome but a correct state.
 The other is with a palindrome but an incorrect state. In both instances, the modification of the queue is correct.
