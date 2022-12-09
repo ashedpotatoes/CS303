@@ -2,9 +2,11 @@
 
 Proof and screenshots of program below.
 
-This program doesn't have a lot of user involvement, but it operates off of main.
+This program doesn't have a lot of user involvement, but it operates off of main and the user will input values in the console. 
 
-The program will prompt for the user to enter a singular string in the console to check if its a palindrome, 
+![Screenshot (1147)](https://user-images.githubusercontent.com/91101801/206593727-bab5951d-707e-4257-b371-8fbd3463bea2.png)
+
+The program will prompt for the user to enter a singular string  to check if its a palindrome, 
 upon entering it, the user will get a message if what they entered is or isn't a palindrome. 
 
 After that, the program will output the states and capitals, then ask which state the user wants to find.
